@@ -243,6 +243,31 @@ z-index: 1021;
 display: none;
 }
 
+#scorePoint:hover{
+  color: #FFFFFF;
+  background-color: #747474;
+}
+
+input[type = "radio"]{
+  display: none;
+} 
+
+.puntuacion{
+  direction: rtl;
+      unicode-bidi: bidi-override;
+}
+
+label{
+  color: #ffffff7e;
+}
+label:hover ,
+label:hover ~ label {
+  color: #ffffff;
+}
+input[type = "radio"]:checked ~ label {
+  color: #ffffff;
+}
+
 a.custom-card,
 a.custom-card:hover {
 color: inherit;
@@ -252,6 +277,14 @@ text-decoration: inherit;
 .checked {
 color: blue;
 }
+
+#comentario{
+  text-align: center;
+  padding: 15px;
+  color: #FFFFFF;
+  background-color: #747474;
+  margin: 5px;
+};
 
 #activo{
 background-color:#00000011;
