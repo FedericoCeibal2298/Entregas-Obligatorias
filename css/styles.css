@@ -176,6 +176,8 @@ left: 50%;
 transform: translate(-50%, 0);
 }
 
+
+
 .lds-ring {
 display: inline-block;
 position: relative;
@@ -214,6 +216,22 @@ animation-delay: -0.15s;
 }
 }
 
+#activo:hover #salir{
+display: flex;
+position: absolute;
+margin-top: 10px;
+animation: menu 1s;
+}
+@keyframes menu{
+0%{
+padding-top: 10px;
+} 40%{
+padding-top: 20px;
+} 100%{
+padding-top: 12px;
+}
+}
+
 #spinner-wrapper{
 position: fixed;
 background-color: rgba(0,0,0,0.5);
@@ -232,5 +250,23 @@ text-decoration: inherit;
 }
 
 .checked {
-color: orange;
+color: blue;
+}
+
+#activo{
+background-color:#00000011;
+text-align: center;
+color: white;
+width: 150px;
+}
+
+#salir{
+text-align: center;
+background-color: #000000a4;
+display:none;
+width: 150px;
+padding-left: 60px;
+padding-right: 70px;
+padding-bottom: 10px;
+padding-top: 10px;  
 }
