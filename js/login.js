@@ -7,7 +7,7 @@ function login(){
         alert("Por favor ingrese un usuario o contraseña correcta");   
     }
     else{
-        window.location="index.html";
+        window.location="home.html";
         localStorage.setItem("usuario",usuario)
     }
 };
@@ -15,5 +15,5 @@ function login(){
 })
 function logout(){
     localStorage.clear();
-    window.location="login.html";
+    window.location="index.html";
     }
